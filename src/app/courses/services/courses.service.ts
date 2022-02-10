@@ -17,7 +17,7 @@ export class CoursesService {
     return this.httpClient.get<Course[]>(this.API)
     .pipe(
       first(), // retorna a primeira resposta do json
-      delay(15000),
+      delay(5000),
       tap(courses => console.log(courses))
     )
 
